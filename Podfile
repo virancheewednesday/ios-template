@@ -6,6 +6,7 @@ target 'ios-template' do
   use_frameworks!
 
   # Pods for ios-template
+  pod 'SwiftLint'
 
   target 'ios-templateTests' do
     inherit! :search_paths

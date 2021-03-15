@@ -138,7 +138,6 @@
 				618A31F525FF55E9007CEEDF /* AppDelegate.swift */,
 				618A31F725FF55E9007CEEDF /* SceneDelegate.swift */,
 				618A324225FF5DF5007CEEDF /* HomeScreen */,
-				618A31F925FF55E9007CEEDF /* ViewController.swift */,
 				618A31FB25FF55E9007CEEDF /* Main.storyboard */,
 				618A31FE25FF55EC007CEEDF /* Assets.xcassets */,
 				618A320025FF55EC007CEEDF /* LaunchScreen.storyboard */,
@@ -168,6 +167,7 @@
 		618A324225FF5DF5007CEEDF /* HomeScreen */ = {
 			isa = PBXGroup;
 			children = (
+				618A31F925FF55E9007CEEDF /* ViewController.swift */,
 			);
 			path = HomeScreen;
 			sourceTree = "<group>";

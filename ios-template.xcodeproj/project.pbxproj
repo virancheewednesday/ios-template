@@ -17,6 +17,8 @@
 		618A320225FF55EC007CEEDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 618A320025FF55EC007CEEDF /* LaunchScreen.storyboard */; };
 		618A320D25FF55EC007CEEDF /* ios_templateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618A320C25FF55EC007CEEDF /* ios_templateTests.swift */; };
 		618A321825FF55EC007CEEDF /* ios_templateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618A321725FF55EC007CEEDF /* ios_templateUITests.swift */; };
+		618A327325FF6575007CEEDF /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = 618A327225FF6575007CEEDF /* swiftgen.yml */; };
+		618A328525FF69E0007CEEDF /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 618A328425FF69E0007CEEDF /* .swiftlint.yml */; };
 		EDF46FC7DB9AA32976B52257 /* Pods_ios_templateTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E685967559B83C521D0B22D9 /* Pods_ios_templateTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +57,8 @@
 		618A321325FF55EC007CEEDF /* ios-templateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-templateUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		618A321725FF55EC007CEEDF /* ios_templateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_templateUITests.swift; sourceTree = "<group>"; };
 		618A321925FF55EC007CEEDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		618A327225FF6575007CEEDF /* swiftgen.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
+		618A328425FF69E0007CEEDF /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		7AC06D012DA251CE843DA1FE /* Pods-ios-template-ios-templateUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-template-ios-templateUITests.release.xcconfig"; path = "Target Support Files/Pods-ios-template-ios-templateUITests/Pods-ios-template-ios-templateUITests.release.xcconfig"; sourceTree = "<group>"; };
 		8626EBF769CFAB152A1BFBD6 /* Pods-ios-template-ios-templateUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-template-ios-templateUITests.debug.xcconfig"; path = "Target Support Files/Pods-ios-template-ios-templateUITests/Pods-ios-template-ios-templateUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		8BC2DE6F9B71D1F1B35308A8 /* Pods-ios-template.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-template.release.xcconfig"; path = "Target Support Files/Pods-ios-template/Pods-ios-template.release.xcconfig"; sourceTree = "<group>"; };
@@ -128,8 +132,12 @@
 		618A31F425FF55E9007CEEDF /* ios-template */ = {
 			isa = PBXGroup;
 			children = (
+				618A327225FF6575007CEEDF /* swiftgen.yml */,
+				618A328425FF69E0007CEEDF /* .swiftlint.yml */,
+				618A327725FF68C2007CEEDF /* SwiftGen */,
 				618A31F525FF55E9007CEEDF /* AppDelegate.swift */,
 				618A31F725FF55E9007CEEDF /* SceneDelegate.swift */,
+				618A324225FF5DF5007CEEDF /* HomeScreen */,
 				618A31F925FF55E9007CEEDF /* ViewController.swift */,
 				618A31FB25FF55E9007CEEDF /* Main.storyboard */,
 				618A31FE25FF55EC007CEEDF /* Assets.xcassets */,
@@ -157,6 +165,20 @@
 			path = "ios-templateUITests";
 			sourceTree = "<group>";
 		};
+		618A324225FF5DF5007CEEDF /* HomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = HomeScreen;
+			sourceTree = "<group>";
+		};
+		618A327725FF68C2007CEEDF /* SwiftGen */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SwiftGen;
+			sourceTree = "<group>";
+		};
 		85C59994A513C5322BA9D5CA /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -178,6 +200,7 @@
 			buildConfigurationList = 618A321C25FF55EC007CEEDF /* Build configuration list for PBXNativeTarget "ios-template" */;
 			buildPhases = (
 				4EB0B9B3A1119E0196260624 /* [CP] Check Pods Manifest.lock */,
+				618A324B25FF5FF9007CEEDF /* SwiftGen */,
 				618A323B25FF5C0F007CEEDF /* SwiftLint */,
 				618A31EE25FF55E9007CEEDF /* Sources */,
 				618A31EF25FF55E9007CEEDF /* Frameworks */,
@@ -277,9 +300,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				618A328525FF69E0007CEEDF /* .swiftlint.yml in Resources */,
 				618A320225FF55EC007CEEDF /* LaunchScreen.storyboard in Resources */,
 				618A31FF25FF55EC007CEEDF /* Assets.xcassets in Resources */,
 				618A31FD25FF55E9007CEEDF /* Main.storyboard in Resources */,
+				618A327325FF6575007CEEDF /* swiftgen.yml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,7 +385,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+			shellScript = "cd ios-template\n\"${PODS_ROOT}/SwiftLint/swiftlint\" \n";
+		};
+		618A324B25FF5FF9007CEEDF /* SwiftGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftGen;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/bash\nif which \"$PODS_ROOT/SwiftGen/bin/swiftgen\" >/dev/null; then\n    \"$PODS_ROOT/SwiftGen/bin/swiftgen\" config run --config \"${PROJECT_DIR}/ios-template/swiftgen.yml\"\nelse\n    echo \"warning: SwiftGen not installed, download from https://github.com/SwiftGen/SwiftGen\"\nfi\n";
 		};
 		CB3F7F6CF7315F2DD9D40CD3 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
